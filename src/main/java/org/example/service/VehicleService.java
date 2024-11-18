@@ -15,8 +15,6 @@ public class VehicleService {
     }
 
     public List<Vehicle> getAllVehicles() {
-        System.out.println(vehicleRepository.findAll());
-        System.out.println("111111111111111111111111111");
         return vehicleRepository.findAll();
     }
 
