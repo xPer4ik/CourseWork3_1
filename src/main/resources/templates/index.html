@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicles</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h1>Available Vehicles</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Availability</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="vehicle : ${vehicles}">
+        <td th:text="${vehicle.id}"></td>
+        <td th:text="${vehicle.name}"></td>
+        <td th:text="${vehicle.type}"></td>
+        <td th:text="${vehicle.availability ? 'Yes' : 'No'}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
