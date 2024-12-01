@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7911a9bb-98f7-492f-8c7f-f092db8b3a51" name="Changes" comment="Changes in properties">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/header.css" afterDir="false" />
+    <list default="true" id="7911a9bb-98f7-492f-8c7f-f092db8b3a51" name="Changes" comment="updated_header_footer">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/BookingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/homepage_main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/booking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731928033110</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated_header_footer">
+      <option name="closed" value="true" />
+      <created>1733038775530</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733038775530</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,7 +169,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="added database" />
     <MESSAGE value="Changes in properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in properties" />
+    <MESSAGE value="updated_header_footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated_header_footer" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

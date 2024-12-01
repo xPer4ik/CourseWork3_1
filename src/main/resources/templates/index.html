@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/homepage_main.css">
 </head>
 <body>
     <header id="main-header">
@@ -23,25 +24,7 @@
         </nav>
     </header>
     <main>
-        <h1>Available Vehicles</h1>
-        <table>
-            <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Availability</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr th:each="vehicle : ${vehicles}">
-                <td th:text="${vehicle.id}"></td>
-                <td th:text="${vehicle.name}"></td>
-                <td th:text="${vehicle.type}"></td>
-                <td th:text="${vehicle.availability ? 'Yes' : 'No'}"></td>
-            </tr>
-            </tbody>
-        </table>
+        <h1 id="welcome_text">Добро пожаловать в сервис аренды автомобилей</h1>
     </main>
     <footer class="footer">
         <div class="footer-container">

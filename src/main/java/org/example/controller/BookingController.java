@@ -9,17 +9,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 @Controller
-public class VehicleHtmlController {
+public class BookingController {
     private final VehicleService vehicleService;
 
-    public VehicleHtmlController(VehicleService vehicleService) {
+    public BookingController(VehicleService vehicleService) {
         this.vehicleService = vehicleService;
     }
 
-    @GetMapping("/")
-    public String listVehicles(Model model) {
+    @GetMapping("/booking")
+    public String bookingPage(Model model) {
         List<Vehicle> vehicles = vehicleService.getAllVehicles();
         model.addAttribute("vehicles", vehicles);
-        return "index";
+        return "booking"; // Вернет шаблон `booking.html`
     }
 }
