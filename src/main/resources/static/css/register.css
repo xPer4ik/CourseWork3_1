@@ -18,9 +18,14 @@
     flex-direction: column;
 }
 
+.register-container .form-group {
+    margin-bottom: 15px;
+}
+
 .register-container label {
     margin-bottom: 5px;
     font-weight: bold;
+    display: block; /* Текст метки на одной строке */
 }
 
 .register-container input {
@@ -28,6 +33,8 @@
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 100%; /* Поле ввода на всю ширину */
+    box-sizing: border-box; /* Учитывает padding и border в общей ширине */
 }
 
 .register-container button {
@@ -37,6 +44,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%; /* Кнопка на всю ширину */
 }
 
 .register-container button:hover {

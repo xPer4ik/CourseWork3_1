@@ -14,9 +14,10 @@ public class UserService {
     }
 
     public User saveUser(User user) {
-        return userRepository.save(user);
+        return userRepository.save(user);  // Сохраняем пользователя в базу данных
     }
+
     public User findByUsername(String username) {
-        return userRepository.findByUsername(username);
+        return userRepository.findByUsername(username);  // Ищем пользователя по имени
     }
 }

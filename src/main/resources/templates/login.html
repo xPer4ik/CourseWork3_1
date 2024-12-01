@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/login.css">
-
 </head>
 <body>
 <!-- Включаем общий header -->
@@ -17,19 +16,23 @@
     <div class="login-container">
         <h1>Вход</h1>
         <form action="/authenticate" method="post">
-            <label for="username">Логин:</label>
-            <input type="text" id="username" name="username" required>
+            <div class="form-group">
+                <label for="username">Логин:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
 
-            <label for="password">Пароль:</label>
-            <input type="password" id="password" name="password" required>
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
 
             <button type="submit">Войти</button>
         </form>
-    <div class="register-container">
-        <a href="/register" class="register-link">Зарегистрироваться</a>
-    </div>
-    </div>
 
+        <div class="register-container">
+            <p>Нет аккаунта? <a href="/register" class="register-link">Зарегистрироваться</a></p>
+        </div>
+    </div>
 </main>
 
 <!-- Включаем общий footer -->

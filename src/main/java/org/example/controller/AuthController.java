@@ -9,16 +9,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class AuthController {
 
     @GetMapping("/login")
-    public String loginPage() {
-        return "login"; // возвращаем имя шаблона login.html
+    public String showLoginForm() {
+        return "login"; // Имя шаблона login.html
     }
-    @PostMapping("/authenticate")
-    public String authenticateUser(@RequestParam String username,
-                                   @RequestParam String password) {
-        // Простая проверка (в будущем замените на проверку из базы данных)
-        if ("admin".equals(username) && "password".equals(password)) {
-            return "redirect:/"; // Успешный вход, перенаправляем на главную страницу
-        }
-        return "redirect:/login?error"; // Ошибка входа, возвращаем на страницу входа
+
+    @PostMapping("/login")
+    public String loginUser(@RequestParam String username, @RequestParam String password) {
+        // Логика для аутентификации пользователя
+        // В реальном проекте вы будете использовать Spring Security для аутентификации
+        return "redirect:/"; // Перенаправление на главную страницу после успешного входа
     }
 }
