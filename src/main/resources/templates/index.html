@@ -9,32 +9,10 @@
     <link rel="stylesheet" href="/css/homepage_main.css">
 </head>
 <body>
-    <header id="main-header">
-        <!-- Логотип -->
-        <a href="/" id="logo">CarShare</a>
-
-        <!-- Навигация -->
-        <nav id="main-nav">
-            <a href="/booking">Бронирование</a>
-        </nav>
-
-        <!-- Вход -->
-        <nav id="login-nav">
-            <a href="/login">Вход</a>
-        </nav>
-    </header>
+    <header th:replace="fragments/header :: header"></header>
     <main>
         <h1 id="welcome_text">Добро пожаловать в сервис аренды автомобилей</h1>
     </main>
-    <footer class="footer">
-        <div class="footer-container">
-            <p class="footer-text">© 2024 CarShare. Все права защищены.</p>
-            <nav class="footer-nav">
-                <a href="/privacy" class="footer-link">Политика конфиденциальности</a>
-                <a href="/terms" class="footer-link">Условия использования</a>
-                <a href="/contact" class="footer-link">Контакты</a>
-            </nav>
-        </div>
-    </footer>
+    <footer th:replace="fragments/footer :: footer"></footer>
 </body>
 </html>
