@@ -1,0 +1,41 @@
+/* Главный header */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    position: fixed; /* Закрепляем элемент */
+    top: 0; /* Фиксация сверху */
+    left: 0; /* Фиксация слева */
+    width: 100%; /* Полная ширина */
+    z-index: 1000; /* Над другими элементами */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+}
+
+/* Логотип */
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+/* Навигация */
+#main-nav a, #login-nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* Эффект при наведении на ссылки */
+#main-nav a:hover, #login-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Правое выравнивание для входа */
+#login-nav {
+    margin-left: auto;
+}

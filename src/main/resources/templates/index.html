@@ -4,26 +4,54 @@
     <meta charset="UTF-8">
     <title>Vehicles</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
 </head>
 <body>
-<h1>Available Vehicles</h1>
-<table>
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Type</th>
-        <th>Availability</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr th:each="vehicle : ${vehicles}">
-        <td th:text="${vehicle.id}"></td>
-        <td th:text="${vehicle.name}"></td>
-        <td th:text="${vehicle.type}"></td>
-        <td th:text="${vehicle.availability ? 'Yes' : 'No'}"></td>
-    </tr>
-    </tbody>
-</table>
+    <header id="main-header">
+        <!-- Логотип -->
+        <a href="/" id="logo">CarShare</a>
+
+        <!-- Навигация -->
+        <nav id="main-nav">
+            <a href="/booking">Бронирование</a>
+        </nav>
+
+        <!-- Вход -->
+        <nav id="login-nav">
+            <a href="/login">Вход</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Available Vehicles</h1>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Availability</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="vehicle : ${vehicles}">
+                <td th:text="${vehicle.id}"></td>
+                <td th:text="${vehicle.name}"></td>
+                <td th:text="${vehicle.type}"></td>
+                <td th:text="${vehicle.availability ? 'Yes' : 'No'}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">© 2024 CarShare. Все права защищены.</p>
+            <nav class="footer-nav">
+                <a href="/privacy" class="footer-link">Политика конфиденциальности</a>
+                <a href="/terms" class="footer-link">Условия использования</a>
+                <a href="/contact" class="footer-link">Контакты</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,8 +1,13 @@
+/* Для всего документа */
 body {
+    margin: 0; /* Убираем отступы по умолчанию */
     font-family: Arial, sans-serif;
-    margin: 20px;
+    padding-top: 50px; /* Отступ, чтобы контент не перекрывался фиксированным header */
 }
 
+main{
+    margin: 0 20px;
+}
 h1 {
     color: #333;
 }
