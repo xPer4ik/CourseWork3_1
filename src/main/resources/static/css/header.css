@@ -42,39 +42,33 @@
 .user-info {
     position: relative;
 }
-
-.greeting {
-    cursor: pointer;
-    font-size: 18px;
-    color: white;
-}
-
-/* Стили для выпадающего меню */
+/* Стиль для выпадающего меню */
 .logout-dropdown {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    min-width: 160px;
+    background-color: #333333; /* Темный фон меню */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Тень для глубины */
     z-index: 1;
-    color: black; /* Добавим цвет текста */
-    padding: 12px; /* Добавим отступы */
-    border: 1px solid #ddd; /* Добавим границу, чтобы увидеть меню */
+    color: #ffffff; /* Белый текст */
+    padding: 5px;
+    border-radius: 8px; /* Скругленные углы */
+    border: 1px solid #444444; /* Тонкая темная граница */
+    text-align: center; /* Центрируем текст внутри меню */
 }
 
-
+/* Добавим эффект при наведении на элементы в меню */
 .logout-dropdown a {
-    color: black;
-    padding: 12px 16px;
+    color: #ffffff; /* Белый текст */
+    padding: 10px 15px; /* Удобные отступы */
     text-decoration: none;
     display: block;
+    border-radius: 6px; /* Скругление углов ссылок */
+    transition: background-color 0.3s ease; /* Плавный эффект изменения фона */
+
 }
 
-.logout-dropdown a:hover {
-    background-color: #ddd;
-}
 
-/* При наведении изменяется фон */
-#login-nav a:hover, .greeting:hover {
-    color: #ccc;  /* Изменяем цвет при наведении */
+/* Дополнительно можно добавить эффект при наведении на .greeting */
+.greeting:hover {
+    text-decoration: underline; /* Подчеркивание */
 }
