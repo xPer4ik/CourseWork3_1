@@ -39,3 +39,42 @@
 #login-nav {
     margin-left: auto;
 }
+.user-info {
+    position: relative;
+}
+
+.greeting {
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+}
+
+/* Стили для выпадающего меню */
+.logout-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+    color: black; /* Добавим цвет текста */
+    padding: 12px; /* Добавим отступы */
+    border: 1px solid #ddd; /* Добавим границу, чтобы увидеть меню */
+}
+
+
+.logout-dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.logout-dropdown a:hover {
+    background-color: #ddd;
+}
+
+/* При наведении изменяется фон */
+#login-nav a:hover, .greeting:hover {
+    color: #ccc;  /* Изменяем цвет при наведении */
+}
