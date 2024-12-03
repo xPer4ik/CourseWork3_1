@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7911a9bb-98f7-492f-8c7f-f092db8b3a51" name="Changes" comment="adding_cars">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/show_error_window.js" afterDir="false" />
+    <list default="true" id="7911a9bb-98f7-492f-8c7f-f092db8b3a51" name="Changes" comment="with_worked_error_massage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/BookingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/BookingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/BookingRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/booking.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/booking.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/booking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733239817600</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="with_worked_error_massage">
+      <option name="closed" value="true" />
+      <created>1733242502369</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733242502369</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +237,8 @@
     <MESSAGE value="without_exit" />
     <MESSAGE value="with_exit" />
     <MESSAGE value="adding_cars" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding_cars" />
+    <MESSAGE value="with_worked_error_massage" />
+    <option name="LAST_COMMIT_MESSAGE" value="with_worked_error_massage" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

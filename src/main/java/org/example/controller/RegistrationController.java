@@ -4,6 +4,7 @@ import org.example.model.User;
 import org.example.service.UserService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -30,7 +31,14 @@ public class RegistrationController {
             @RequestParam String lastName,
             @RequestParam String email,
             @RequestParam String username,
-            @RequestParam String password) {
+            @RequestParam String password,
+            Model model) {
+
+        // Проверяем, если логин уже занят
+        if (userService.findByUsername(username) != null) {
+            model.addAttribute("usernameError", "Этот логин уже занят");
+            return "register";  // Возвращаемся на страницу регистрации с ошибкой
+        }
 
         // Хешируем пароль перед сохранением
         String encodedPassword = passwordEncoder.encode(password);
@@ -49,3 +57,4 @@ public class RegistrationController {
         return "redirect:/login";  // Перенаправление на страницу логина
     }
 }
+

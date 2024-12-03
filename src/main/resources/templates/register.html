@@ -33,6 +33,10 @@
             <div class="form-group">
                 <label for="username">Логин:</label>
                 <input type="text" id="username" name="username" required>
+                <!-- Показать сообщение об ошибке, если оно есть -->
+                <div th:if="${usernameError}" class="error-message">
+                    <p th:text="${usernameError}">Логин уже занят</p>
+                </div>
             </div>
 
             <div class="form-group">
@@ -52,3 +56,4 @@
 <footer th:replace="fragments/footer :: footer"></footer>
 </body>
 </html>
+
