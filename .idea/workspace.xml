@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7911a9bb-98f7-492f-8c7f-f092db8b3a51" name="Changes" comment="without_exit">
+    <list default="true" id="7911a9bb-98f7-492f-8c7f-f092db8b3a51" name="Changes" comment="with_exit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/BookingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/BookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/booking.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/openwindow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/BookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/BookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/booking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733138368454</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="with_exit">
+      <option name="closed" value="true" />
+      <created>1733140107827</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1733140107827</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,7 +225,8 @@
     <MESSAGE value="login_without_secure" />
     <MESSAGE value="reg_with_secure" />
     <MESSAGE value="without_exit" />
-    <option name="LAST_COMMIT_MESSAGE" value="without_exit" />
+    <MESSAGE value="with_exit" />
+    <option name="LAST_COMMIT_MESSAGE" value="with_exit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

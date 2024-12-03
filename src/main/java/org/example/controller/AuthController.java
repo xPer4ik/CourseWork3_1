@@ -10,7 +10,4 @@ public class AuthController {
     public String showLoginForm() {
         return "login"; // Имя шаблона login.html
     }
-
-
-
 }

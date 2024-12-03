@@ -1,0 +1,36 @@
+#bookingModal {
+    position: fixed; /* Фиксированное позиционирование для отображения поверх всех элементов */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    display: flex; /* Flexbox для центрирования */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    z-index: 1000; /* Поверх всех элементов */
+}
+
+.modal-content {
+    background-color: white; /* Белый фон */
+    padding: 20px; /* Внутренние отступы */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Тень по всем сторонам */
+    text-align: center; /* Центрирование текста */
+    top: 40%;
+    left: 50%; /* Центровка по горизонтали */
+    transform: translateX(-200px); /* Смещение на 200px влево */
+    width: 90%; /* Адаптивная ширина */
+    max-width: 400px; /* Максимальная ширина */
+    max-height: 90%; /* Максимальная высота */
+    overflow-y: auto; /* Прокрутка, если контент выходит за пределы */
+    position: relative; /* Для вложенных элементов */
+}
+
+.close {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 10px; /* Отступ сверху */
+    right: 10px; /* Отступ справа */
+    font-size: 18px; /* Размер текста кнопки */
+    cursor: pointer; /* Курсор в виде руки */
+}

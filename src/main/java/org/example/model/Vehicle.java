@@ -14,7 +14,6 @@ public class Vehicle {
 
     private String name;
     private String type;
-    private Boolean availability;
 
     // Геттер для id
     public Long getId() {
@@ -46,13 +45,5 @@ public class Vehicle {
         this.type = type;
     }
 
-    // Геттер для availability
-    public Boolean getAvailability() {
-        return availability;
-    }
 
-    // Сеттер для availability
-    public void setAvailability(Boolean availability) {
-        this.availability = availability;
-    }
 }
