@@ -12,7 +12,12 @@ public class BookingService {
         this.bookingRepository = bookingRepository;
     }
 
-    public void saveBooking(Booking booking) {
+    public void saveBooking(Booking booking) throws IllegalArgumentException {
+        // Проверяем, есть ли уже бронирование для данного автомобиля на выбранную дату
+        if (!bookingRepository.findByVehicleIdAndBookingDate(booking.getVehicleId(), booking.getBookingDate()).isEmpty()) {
+            throw new IllegalArgumentException("This vehicle is already booked for the selected date.");
+        }
+
         bookingRepository.save(booking);
     }
 }

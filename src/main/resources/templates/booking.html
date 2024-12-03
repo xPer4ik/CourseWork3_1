@@ -28,12 +28,15 @@
             <td th:text="${vehicle.type}"></td>
             <td>
                 <button type="button" th:attr="onclick='openBookingModal(' + ${vehicle.id} + ')'" >Забронировать</button>
-
-
             </td>
         </tr>
         </tbody>
     </table>
+
+    <div th:if="${errorMessage}" class="modal-error" id="errorMessageModal">
+        <span class="close" onclick="closeErrorMessage()">&times;</span>
+        <p th:text="${errorMessage}">This vehicle is already booked for the selected date. Please choose another date.</p>
+    </div>
 </main>
 <footer th:replace="fragments/footer :: footer"></footer>
 
@@ -53,4 +56,6 @@
 </body>
 
 <script src="/js/openwindow.js"></script>
+<script src="/js/show_error_window.js"></script>
+<script src="/js/app.js"></script>
 </html>

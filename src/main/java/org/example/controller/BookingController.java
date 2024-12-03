@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.security.Principal;
 import java.time.LocalDate;
@@ -42,22 +43,26 @@ public class BookingController {
     public String bookVehicle(
             @RequestParam("vehicleId") Long vehicleId,
             @RequestParam("bookingDate") String bookingDate,
-            Principal principal) {
+            Principal principal,
+            RedirectAttributes redirectAttributes) {
 
-        // Убедимся, что пользователь аутентифицирован
-        if (principal != null) {
-            // Создаем новую запись о бронировании
+        // Преобразуем строку в LocalDate
+        LocalDate bookingDateParsed = LocalDate.parse(bookingDate);
+
+        try {
             Booking booking = new Booking();
             booking.setVehicleId(vehicleId);
-            booking.setUserId(Long.parseLong(principal.getName())); // Ваша логика для получения ID пользователя
-            booking.setBookingDate(LocalDate.parse(bookingDate));
+            booking.setUserId(Long.parseLong(principal.getName()));
+            booking.setBookingDate(bookingDateParsed);
 
-            // Сохраняем бронирование через сервис
             bookingService.saveBooking(booking);
+        } catch (IllegalArgumentException e) {
+            redirectAttributes.addFlashAttribute("errorMessage", e.getMessage());
+            return "redirect:/booking"; // Перенаправляем обратно на страницу бронирования с сообщением об ошибке
         }
 
-        // Перенаправляем на страницу с доступными автомобилями
-        return "redirect:/booking";
+        return "redirect:/booking"; // Успешное бронирование
     }
+
 }
 
