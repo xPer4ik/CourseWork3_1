@@ -14,6 +14,9 @@
     <!-- Навигация -->
     <nav id="main-nav">
         <a href="/booking">Бронирование</a>
+        <div th:if="${role == '[ROLE_ADMIN]'}">
+            <a href="/add-vehicle">Добавить автомобиль</a>
+        </div>
     </nav>
 
     <!-- Вход / Имя пользователя -->
@@ -36,5 +39,4 @@
 </main>
 
 </body>
-
 </html>

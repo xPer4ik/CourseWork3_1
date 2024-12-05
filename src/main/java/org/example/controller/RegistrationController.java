@@ -50,6 +50,7 @@ public class RegistrationController {
         user.setEmail(email);
         user.setUsername(username);
         user.setPassword(encodedPassword);
+        user.setRole("USER");
 
         // Сохраняем пользователя в базе данных
         userService.saveUser(user);

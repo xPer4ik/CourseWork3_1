@@ -4,6 +4,9 @@ import org.example.model.Booking;
 import org.example.model.Vehicle;
 import org.example.service.BookingService;
 import org.example.service.VehicleService;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,11 +33,14 @@ public class BookingController {
         // Передаем список автомобилей в модель
         List<Vehicle> vehicles = vehicleService.getAllVehicles();
         model.addAttribute("vehicles", vehicles);
-
-        // Проверяем, если пользователь аутентифицирован, передаем его имя в модель
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String role = ((UserDetails) authentication.getPrincipal()).getAuthorities().toString(); // Получаем роль пользователя
         if (principal != null) {
             model.addAttribute("username", principal.getName());
+            model.addAttribute("role", role);
         }
+
+
 
         return "booking"; // Вернет шаблон `booking.html`
     }

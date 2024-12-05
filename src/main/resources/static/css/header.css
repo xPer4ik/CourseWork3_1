@@ -24,14 +24,18 @@
 }
 
 /* Навигация */
-#main-nav a, #login-nav a {
+#main-nav {
+    display: flex; /* Выравнивание по горизонтали */
+}
+
+#main-nav a {
     color: white;
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 15px; /* Отступ между ссылками */
 }
 
 /* Эффект при наведении на ссылки */
-#main-nav a:hover, #login-nav a:hover {
+#main-nav a:hover {
     text-decoration: underline;
 }
 
@@ -39,36 +43,36 @@
 #login-nav {
     margin-left: auto;
 }
+
 .user-info {
     position: relative;
 }
+
 /* Стиль для выпадающего меню */
 .logout-dropdown {
     display: none;
     position: absolute;
-    background-color: #333333; /* Темный фон меню */
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+    background-color: #333333;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    color: #ffffff; /* Белый текст */
+    color: #ffffff;
     padding: 5px;
-    border-radius: 8px; /* Скругленные углы */
-    border: 1px solid #444444; /* Тонкая темная граница */
-    text-align: center; /* Центрируем текст внутри меню */
+    border-radius: 8px;
+    border: 1px solid #444444;
+    text-align: center;
 }
 
 /* Добавим эффект при наведении на элементы в меню */
 .logout-dropdown a {
-    color: #ffffff; /* Белый текст */
-    padding: 10px 15px; /* Удобные отступы */
+    color: #ffffff;
+    padding: 10px 15px;
     text-decoration: none;
     display: block;
-    border-radius: 6px; /* Скругление углов ссылок */
-    transition: background-color 0.3s ease; /* Плавный эффект изменения фона */
-
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
-
 
 /* Дополнительно можно добавить эффект при наведении на .greeting */
 .greeting:hover {
-    text-decoration: underline; /* Подчеркивание */
+    text-decoration: underline;
 }
