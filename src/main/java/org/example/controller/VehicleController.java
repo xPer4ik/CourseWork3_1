@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.List;
 
 @Controller
@@ -26,11 +27,18 @@ public class VehicleController {
         return vehicleService.saveVehicle(vehicle);
     }
 
-    @GetMapping("/vehicles/add-vehicle")
-    public String showAddVehicleForm(Model model) {
-        model.addAttribute("vehicle", new Vehicle());  // Инициализация пустого объекта автомобиля
-        return "add-vehicle";  // HTML-форма для добавления автомобиля
+    @GetMapping("/vehiclesadd-vehicle")
+    public String showAddVehicleForm(Model model, Principal principal) {
+        System.out.println("Username: " + principal.getName());
+        if (principal != null) {
+            System.out.println("Username: " + principal.getName()); // Проверка значения имени пользователя
+            model.addAttribute("username", principal.getName());
+        }
+        model.addAttribute("vehicle", new Vehicle());
+        return "add-vehicle";
     }
+
+
 
     @PostMapping("/vehicles/add-vehicle2")
     public String addVehicle(@ModelAttribute Vehicle vehicle) {
