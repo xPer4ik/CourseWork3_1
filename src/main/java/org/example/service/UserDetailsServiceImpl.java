@@ -33,5 +33,4 @@ public class UserDetailsServiceImpl implements UserDetailsService {
                 Collections.singletonList(new SimpleGrantedAuthority("ROLE_" + user.getRole())) // Преобразование роли в формат Spring Security
         );
     }
-
 }

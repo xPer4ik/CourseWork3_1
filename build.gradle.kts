@@ -31,7 +31,21 @@ dependencies {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
     developmentOnly("org.springframework.boot:spring-boot-devtools")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.8.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.8.2")
 
+    // Для мокирования с Mockito
+    testImplementation("org.mockito:mockito-core:5.4.0")
+    testImplementation("org.mockito:mockito-junit-jupiter:5.4.0")
+
+    // Для тестирования Spring Boot
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude(group = "org.junit.vintage", module = "junit-vintage-engine") // Используем только JUnit 5
+    }
+
+    // Для работы с MockMvc
+    testImplementation("org.springframework.security:spring-security-test")
 }
 
 tasks.withType<Test> {

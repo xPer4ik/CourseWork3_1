@@ -69,6 +69,5 @@ public class BookingController {
 
         return "redirect:/booking"; // Успешное бронирование
     }
-
 }
 

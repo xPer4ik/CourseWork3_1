@@ -45,9 +45,4 @@ public class VehicleController {
         vehicleService.saveVehicle(vehicle);
         return "redirect:/booking";
     }
-
-    @DeleteMapping("/vehicles/{id}")
-    public void deleteVehicle(@PathVariable Long id) {
-        vehicleService.deleteVehicle(id);
-    }
 }
