@@ -34,7 +34,7 @@
   - **Repositories**: взаимодействие с базой данных.
 - `src/main/resources`: ресурсы для проекта.
   - **Templates**: HTML-шаблоны (Thymeleaf).
-  - **Static**: файлы CSS и изображения.
+  - **Static**: файлы CSS и JS.
 - `src/test/java`: модульные тесты с использованием JUnit.
 
 ---
@@ -50,7 +50,7 @@
 ### Инструкция по запуску:
 1. Склонируйте репозиторий:
    ```bash
-   git clone https://github.com/<ваш-логин>/CarShare.git
+   git clone https://github.com/xPer4ik/CarShare.git
    ```
 2. Перейдите в корневую папку проекта:
    ```bash
